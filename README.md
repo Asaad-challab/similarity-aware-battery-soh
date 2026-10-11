@@ -110,3 +110,24 @@ published feature-weight estimation procedure.
 
 The original dataset files and trained checkpoints are
 not included in this repository.
+
+## Mathematical Formulation
+
+The weighted similarity distance is:
+
+$$
+D_w = \sum_{j=1}^{F} w_j
+\left(\frac{x_j-\mu_j}{\sigma_j}\right)^2
+$$
+
+where:
+- \(w_j\) is the normalised feature importance.
+- \(x_j\) is the target battery's early-life feature value.
+- \(\mu_j\) and \(\sigma_j\) are source battery statistics.
+
+## Citation
+
+**Selective Model Transfer for Li-ion SOH Estimation Based on a Weighted Similarity Metric**
+
+*Journal of Energy Storage*, 2026.
+
