@@ -1,0 +1,29 @@
+{
+  "features": [
+    "t_chg",
+    "t_V20",
+    "t_V40",
+    "t_V60",
+    "t_V80",
+    "Q_chg",
+    "E_chg",
+    "t_CV",
+    "T_mean",
+    "T_delta"
+  ],
+  "weights": [
+    0.043465275317430496,
+    0.09474142640829086,
+    0.05790816619992256,
+    0.10937575250864029,
+    0.08408823609352112,
+    0.15306590497493744,
+    0.11924955248832703,
+    0.2549944519996643,
+    0.04580400139093399,
+    0.03730720654129982
+  ],
+  "method": "MIT gradient-based sensitivity",
+  "normalization": "feature-only (SOH unnormalized)",
+  "source_model": "src/train/results/lstm_baseline_20251217_1558/best_model.pt"
+}

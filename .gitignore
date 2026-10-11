@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+venv/
+venv_gpu/
+.venv/
+.env
+.env.*
+*.pt
+*.pth
+*.ckpt
+*.pkl
+data/
+datasets/
+runs/
+.DS_Store
