@@ -1,0 +1,10 @@
+{
+  "absolute_SOH_MAE_mean": 0.11369792109938756,
+  "absolute_SOH_MAE_std": 0.044159664382601764,
+  "absolute_SOH_RMSE_mean": 0.18496738506848892,
+  "absolute_SOH_RMSE_std": 0.0756467748628692,
+  "absolute_SOH_RMSE_max": 0.3176636679027667,
+  "R2_mean": 0.9976693434546637,
+  "R2_std": 0.0017600295159484847,
+  "num_test_cells": 8
+}

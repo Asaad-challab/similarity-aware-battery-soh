@@ -71,3 +71,42 @@ PhD Candidate, University of Technology Sydney
 
 [GitHub](https://github.com/Asaad-challab) |
 [LinkedIn](https://www.linkedin.com/in/asaad-wahaj-217253246/)
+
+## Experimental Results
+
+### MIT Battery Dataset — Anchored-Window SOH Reconstruction
+
+| Metric | Result |
+|---|---:|
+| Mean MAE | 0.1137 percentage points |
+| Mean RMSE | 0.1850 percentage points |
+| Mean R² | 0.9977 |
+| Test cells | 8 |
+
+These results use the observed SOH at the beginning of each
+prediction window to reconstruct absolute SOH from predicted
+SOH changes. They are not fully autonomous rolling predictions.
+
+### Gradient-Based Feature Importance
+
+| Feature | Weight |
+|---|---:|
+| Constant-voltage charging duration (t_CV) | 0.2550 |
+| Charging capacity (Q_chg) | 0.1531 |
+| Charging energy (E_chg) | 0.1192 |
+| Time to 60% voltage threshold (t_V60) | 0.1094 |
+
+The complete feature weights are provided in
+`results/mit_feature_weights.json`.
+
+### Reproducibility Notes
+
+The saved feature weights reference an MIT checkpoint trained
+in December 2025. The feature-weighting script computes
+absolute-SOH loss gradients, while the reviewed MIT baseline
+script trains on SOH changes. This difference requires
+verification before claiming exact reproduction of the
+published feature-weight estimation procedure.
+
+The original dataset files and trained checkpoints are
+not included in this repository.
